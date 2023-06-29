@@ -17,105 +17,46 @@
         </style> -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     </head>
-    <body>
-    <div class="container">
-        <?php include ('character-db\resources\navbar.php'); ?>
-        <h1 class="title">Tēlu katalogs</h1> 
-        <section>
-            <article class="filters" >
-                    <h3>Filtri</h3>  
-                    <div class="type">
-                        <input type="radio" id="all" name="type" value="1">
-                        <label for="type">All</label><br>
-                        <input type="radio" id="dd" name="type" value="2">
-                        <label for="type">D&D</label><br>
-                        <input type="radio" id="books" name="type" value="3">
-                        <label for="type">Books</label><br>
-                    </div>
 
-            </article>
-            <article class="product">
-                <div class="one_char">
-                    <div class="cover">
-                        <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
-                    </div>
-                    <div class="char_info">
-                        <h3><a href="./character.blade.php">Po</a></h3>
-                        <p>Autors</p>
-                        <div class="tags">
-                            <div class="one_tag">Dzīvnieks</div>
-                            <div class="one_tag">Kung-Fu</div>
-                            <div class="one_tag">Antropomirfisms</div>
-                        </div>
-                    </div>
+    <body>
+    <?php include 'character-db\resources\navbar.php'; ?>
+        <h1 class="title">Jauns tēls</h1> 
+        <section>
+            <form action="">
+                <div class="whole">
+                    <input type="radio" id="dd" name="type" value="2">
+                    <label for="type">D&D</label><br>
+                    <input type="radio" id="books" name="type" value="3">
+                    <label for="type">Books</label><br>
                 </div>
-                <div class="one_char">
-                    <div class="cover">
-                        <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
-                    </div>
-                    <div class="char_info">
-                    <h3><a href="./character.blade.php">Po</a></h3>
-                        <p>Autors</p>
-                        <div class="tags">
-                            <div class="one_tag">Elfs</div>
-                        </div>
-                    </div>
+                <div class="whole">
+                    <label for="name">Vārds</label><br>
+                    <input type="text" id="name" name="name">
                 </div>
-                <div class="one_char">
-                    <div class="cover">
-                        <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
-                    </div>
-                    <div class="char_info">
-                    <h3><a href="./character.blade.php">Po</a></h3>
-                        <p>Autors</p>
-                        <div class="tags">
-                            <div class="one_tag">Elfs</div>
-                        </div>
-                    </div>
+                <div class="whole">
+                    <label for="race">Rase</label><br>
+                    <input type="text" id="race" name="race">
                 </div>
-                <div class="one_char">
-                    <div class="cover">
-                        <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
-                    </div>
-                    <div class="char_info">
-                    <h3><a href="./character.blade.php">Po</a></h3>
-                        <p>Autors</p>
-                        <div class="tags">
-                            <div class="one_tag">Elfs</div>
-                        </div>
-                    </div>
+                <div class="whole">
+                    <label for="age">Vecums</label><br>
+                    <input type="text" id="age" name="age">
                 </div>
-                <div class="one_char">
-                    <div class="cover">
-                        <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
-                    </div>
-                    <div class="char_info">
-                    <h3><a href="./character.blade.php">Po</a></h3>
-                        <p>Autors</p>
-                        <div class="tags">
-                            <div class="one_tag">Elfs</div>
-                        </div>
-                    </div>
+                <div class="whole">
+                    <label for="img">Attēls</label><br>
+                    <input class="img" id="img" type="file" accept=".jpeg, .png">
                 </div>
-                <div class="one_char">
-                    <div class="cover">
-                        <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
-                    </div>
-                    <div class="char_info">
-                    <h3><a href="./character.blade.php">Po</a></h3>
-                        <p>Autors</p>
-                        <div class="tags">
-                            <div class="one_tag">Elfs</div>
-                        </div>
-                    </div>
+                <div class="whole">
+                    <label for="descrption">Apraksts</label><br>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Vieta tekstam"></textarea>
                 </div>
-            </article>
+                <input class="submit" type="submit" value="Saglabāt">
+                        
+            </form>
+            
         </section>
-        
         <footer>
             <p>Izveidoja <strong>Emīlija Radzeviča</strong> un <strong>Roberta Zvejniece </strong></p>
         </footer>
     </div>
-    
     </body>
 </html>
