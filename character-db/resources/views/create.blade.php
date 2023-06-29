@@ -19,7 +19,7 @@
             <div class="navigation">
                 <nav>
                     <ul class="nav_buttons">
-                        <li class="nav_char"><a href="welcome">Tēli</a></li>
+                        <li class="nav_char"><a href="/">Tēli</a></li>
                         <li><a href="user">Profils</a></li>
                         <li><a href="create">Izveidot tēlu</a></li>
                     </ul>
