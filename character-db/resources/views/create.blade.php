@@ -20,5 +20,43 @@
 
     <body>
         <?php include ('character-db\resources\navbar.php'); ?>
+        <h1 class="title">Jauns tēls</h1> 
+        <section>
+            <form action="">
+                <div class="whole">
+                    <input type="radio" id="dd" name="type" value="2">
+                    <label for="type">D&D</label><br>
+                    <input type="radio" id="books" name="type" value="3">
+                    <label for="type">Books</label><br>
+                </div>
+                <div class="whole">
+                    <label for="name">Vārds</label><br>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="whole">
+                    <label for="race">Rase</label><br>
+                    <input type="text" id="race" name="race">
+                </div>
+                <div class="whole">
+                    <label for="age">Vecums</label><br>
+                    <input type="text" id="age" name="age">
+                </div>
+                <div class="whole">
+                    <label for="img">Attēls</label><br>
+                    <input class="img" id="img" type="file" accept=".jpeg, .png">
+                </div>
+                <div class="whole">
+                    <label for="descrption">Apraksts</label><br>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Vieta tekstam"></textarea>
+                </div>
+                <input class="submit" type="submit" value="Saglabāt">
+                        
+            </form>
+            
+        </section>
+        <footer>
+            <p>Izveidoja <strong>Emīlija Radzeviča</strong> un <strong>Roberta Zvejniece </strong></p>
+        </footer>
+    </div>
     </body>
 </html>
