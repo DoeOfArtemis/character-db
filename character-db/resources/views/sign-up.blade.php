@@ -12,6 +12,7 @@
 
         <link href="{{ asset('css/sign-up.css') }}" rel="stylesheet">
     </head>
+
     <body>
     <div class="container">
         <div class="header">
@@ -64,6 +65,10 @@
             <p>Izveidoja <strong>Emīlija Radzeviča</strong> un <strong>Roberta Zvejniece </strong></p>
         </footer>
     </div>
-    
+       
+    </body>
+</html>
+        
+
     </body>
 </html>

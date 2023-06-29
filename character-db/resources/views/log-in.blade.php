@@ -12,6 +12,7 @@
 
         <link href="{{ asset('css/log-in.css') }}" rel="stylesheet">
     </head>
+
     <body>
     <div class="container">
         <div class="header">

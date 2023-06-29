@@ -12,6 +12,7 @@
 
         <link href="{{ asset('css/create.css') }}" rel="stylesheet">
     </head>
+
     <body>
     <div class="container">
         <div class="header">
@@ -63,11 +64,9 @@
                 <input class="submit" type="submit" value="Saglabāt">         
             </form>   
         </section>
-        
         <footer>
             <p>Izveidoja <strong>Emīlija Radzeviča</strong> un <strong>Roberta Zvejniece </strong></p>
         </footer>
     </div>
-    
     </body>
 </html>
