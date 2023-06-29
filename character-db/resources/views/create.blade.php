@@ -19,7 +19,7 @@
     </head>
 
     <body>
-    <?php include 'character-db\resources\navbar.php'; ?>
+        <?php include ('character-db\resources\navbar.php'); ?>
         <h1 class="title">Jauns tēls</h1> 
         <section>
             <form action="">
