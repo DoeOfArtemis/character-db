@@ -12,8 +12,9 @@ class CharacterController extends Controller
      */
     public function index()
     {
-        $allChars = Character::all();
-        return view('character');
+        $allChars = Character::get();
+        dd($allChars);
+        return view('character', ['characters' => $allChars]);
     }
 
     /**
@@ -29,7 +30,9 @@ class CharacterController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if(Character::Create($request->all())){
+            return true;
+        }
     }
 
     /**
