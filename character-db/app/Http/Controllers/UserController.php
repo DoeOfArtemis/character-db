@@ -12,6 +12,7 @@ class UserController extends Controller
      */
     public function index()
     {
+        //$users = DB::select('select * from users');
         return view('user');
     }
 

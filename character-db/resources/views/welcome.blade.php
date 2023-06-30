@@ -1,3 +1,4 @@
+<!php
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -46,14 +47,6 @@
 
             </article>
             <article class="product">
-            <?php
-                //@foreach ($characters as $character) {
-                    //<div class="char-info">
-                       // {{$character->name}} - {{$character->type}} - {{$character->race}}
-                   // </div>
-                //}
-                //@endforeach
-            ?> 
             
             
             <div class="one_char">
@@ -61,8 +54,8 @@
                         <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
                     </div>
                     <div class="char_info">
-                        <h3><a href="character">Po</a></h3>
-                        <p>Autors</p>
+                        <h3><a href="character">{{print_r($character->name)}}</a></h3>
+                        <p>{{print_r($character->author)}}</p>
                         <div class="tags">
                             <div class="one_tag">Dzīvnieks</div>
                             <div class="one_tag">Kung-Fu</div>
