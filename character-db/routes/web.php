@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CharacterController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Character;
 
@@ -18,9 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('user', function () {
-    return view('user');
-});
+Route::get('user', [UserController::class, 'index']);
 
 Route::get('create', function () {
     return view('create');
@@ -34,14 +34,12 @@ Route::get('sign-up', function () {
     return view('sign-up');
 });
 
-Route::get('character', function () {
-    return view('character');
-});
+Route::get('character', [CharacterController::class, 'index']);
 
 Route::get('/dbconn', function () {
     return view('dbconn');
 });
 
 Route::get('/modeling', function () {
-    return view ('welcome', [Character::itOK()]);
+    return view ('dbconn', [Character::all()]);
 });
