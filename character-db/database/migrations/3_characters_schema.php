@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('subclass')->nullable();
             $table->longtext('description');
             $table->boolean('published')->default(1);
-            $table->dateTime('created_at');
+            $table->date('created_at');
             $table->binary('photo');
         });
 

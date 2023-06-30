@@ -20,9 +20,9 @@ class CharacterController extends Controller
             'age'=>$request->input('age'),
             'class'=>$request->input('class'),
             'subclass'=>$request->input('subclass'),
-            'photo'=>$request->input('img'),
+            'photo'=>$request->file('img'),
             'description'=>$request->input('description'),
-            'created_at'=> Carbon::now()->format('d-m-Y'),
+            'created_at'=> Carbon::now()->format('Y-m-d'),
             'user_id'=>'4',
         ]);
 
