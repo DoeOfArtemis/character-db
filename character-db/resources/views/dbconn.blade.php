@@ -16,6 +16,7 @@
             if(DB::connection()->getPdo()) {
                 echo "Veiksmīgs ir savieojus ar" .DB::connection()->getDatabaseName();
             }
+
         ?>
     <body>
     
