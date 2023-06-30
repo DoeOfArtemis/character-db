@@ -34,27 +34,27 @@
         <section>
             <div class="your_char">
                 <h5><a href="character">Nosaukums</a></h5>
-                <input class="submit" type="button" value="Dzēst">
+                <input class="submit" type="button" value="Dzēst" action="{{route('deletechar')}}">
             </div>
             <div class="your_char">
                 <h5><a href="character">Nosaukums</a></h5>
-                <input class="submit" type="button" value="Dzēst">
+                <input class="submit" type="button" value="Dzēst" action="{{route('deletechar')}}">
             </div>
             <div class="your_char">
                 <h5><a href="character">Nosaukums</a></h5>
-                <input class="submit" type="button" value="Dzēst">
+                <input class="submit" type="button" value="Dzēst" action="{{route('deletechar')}}">
             </div>
             <div class="your_char">
                 <h5><a href="character">Nosaukums</a></h5>
-                <input class="submit" type="button" value="Dzēst">
+                <input class="submit" type="button" value="Dzēst" action="{{route('deletechar')}}">
             </div>
             <div class="your_char">
                 <h5><a href="character">Nosaukums</a></h5>
-                <input class="submit" type="button" value="Dzēst">
+                <input class="submit" type="button" value="Dzēst" action="{{route('deletechar')}}">
             </div>
             <div class="your_char">
                 <h5><a href="character">Nosaukums</a></h5>
-                <input class="submit" type="button" value="Dzēst">
+                <input class="submit" type="button" value="Dzēst" action="{{route('deletechar')}}">
             </div>   
         </section>
         

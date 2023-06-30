@@ -13,6 +13,9 @@ class CharacterController extends Controller
     
     public function create(Request $request)
     {
+        $imagelink = file_get_contents($request->file('img'));
+        $encdata = base64_encode($imagelink);
+
         DB::table('characters')->insert([
             'type'=>$request->input('type'),
             'name'=>$request->input('name'),
@@ -20,7 +23,7 @@ class CharacterController extends Controller
             'age'=>$request->input('age'),
             'class'=>$request->input('class'),
             'subclass'=>$request->input('subclass'),
-            'photo'=>$request->file('img'),
+            'photo'=>$encdata,
             'description'=>$request->input('description'),
             'created_at'=> Carbon::now()->format('Y-m-d'),
             'user_id'=>'4',
@@ -34,7 +37,7 @@ class CharacterController extends Controller
      */
     public function show(Character $character)
     {
-        //
+        // dd('test');
     }
 
     /**
@@ -58,6 +61,8 @@ class CharacterController extends Controller
      */
     public function destroy(Character $character)
     {
-        //
+        // Character::find($character->id)->delete();
+        // $character->delete();
+        dd('test');
     }
 }

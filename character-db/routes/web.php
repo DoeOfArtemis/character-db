@@ -59,3 +59,4 @@ Route::get('/modeling', function () {
 Route::post('sign-up', [UserController::class, 'create'])->name('createuser');
 Route::delete('user', [CharacterController::class, 'destroy'])->name('deletechar');
 Route::post('create', [CharacterController::class, 'create'])->name('createchar');
+Route::get('/', [CharacterController::class, 'show'])->name('showchar');
