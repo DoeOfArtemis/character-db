@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Test;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,4 +40,8 @@ Route::get('character', function () {
 
 Route::get('/dbconn', function () {
     return view('dbconn');
+});
+
+Route::get('/modeling', function () {
+    return view ('dbconn', [Test::all()]);
 });
