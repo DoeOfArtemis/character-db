@@ -42,6 +42,3 @@ Route::get('/dbconn', function () {
     return view('dbconn');
 });
 
-Route::get('/modeling', function () {
-    return view ('dbconn', [Test::all()]);
-});
