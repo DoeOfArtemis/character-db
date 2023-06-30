@@ -18,16 +18,16 @@
             <div class="navigation">
                 <nav>
                     <ul class="nav_buttons">
-                        <li class="nav_char"><a href="">Tēli</a></li>
-                        <li><a href="user">Profils</a></li>
-                        <li><a href="create">Izveidot tēlu</a></li>
+                        <li class="nav_char"><a href="/">{{__('Tēli')}}</a></li>
+                        <li><a href="user">{{__('Profils')}}</a></li>
+                        <li><a href="create">{{__('Izveidot tēlu')}}</a></li>
                     </ul>
                  </nav>
             </div>
             <div class="login">
                 <ul class="log_buttons">
-                    <li><a href="log-in">Ieiet</a></li>
-                    <li><a href="sign-up">Pierakstīties</a></li>
+                    <li><a href="log-in">{{__('Ieiet')}}</a></li>
+                    <li><a href="sign-up">{{__('Pierakstīties')}}</a></li>
                 </ul>
             </div>  
         </div>
@@ -37,11 +37,11 @@
                     <h3>Filtri</h3>  
                     <div class="type">
                         <input type="radio" id="all" name="type" value="1">
-                        <label for="type">All</label><br>
+                        <label for="type">{{__('Visi')}}</label><br>
                         <input type="radio" id="dd" name="type" value="2">
-                        <label for="type">D&D</label><br>
+                        <label for="type">{{__('D&D')}}</label><br>
                         <input type="radio" id="books" name="type" value="3">
-                        <label for="type">Books</label><br>
+                        <label for="type">{{__('Grāmatas')}}</label><br>
                     </div>
 
             </article>
@@ -51,12 +51,12 @@
                         <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
                     </div>
                     <div class="char_info">
-                        <h3><a href="character">Po</a></h3>
-                        <p>Autors</p>
+                        <h3><a href="character">{{__('Po')}}</a></h3>
+                        <p>{{__('Autors')}}</p>
                         <div class="tags">
-                            <div class="one_tag">Dzīvnieks</div>
-                            <div class="one_tag">Kung-Fu</div>
-                            <div class="one_tag">Antropomirfisms</div>
+                            <div class="one_tag">{{__('Dzīvnieks')}}</div>
+                            <div class="one_tag">{{__('Kung_fu')}}</div>
+                            <div class="one_tag">{{__('Antropomorfisms')}}</div>
                         </div>
                     </div>
                 </div>
@@ -65,10 +65,10 @@
                         <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
                     </div>
                     <div class="char_info">
-                    <h3><a href="character">Po</a></h3>
-                        <p>Autors</p>
+                    <h3><a href="character">{{__('Po')}}</a></h3>
+                        <p>{{__('Autors')}}</p>
                         <div class="tags">
-                            <div class="one_tag">Elfs</div>
+                            <div class="one_tag">{{__('Elfs')}}</div>
                         </div>
                     </div>
                 </div>
@@ -77,10 +77,10 @@
                         <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
                     </div>
                     <div class="char_info">
-                    <h3><a href="character">Po</a></h3>
-                        <p>Autors</p>
+                    <h3><a href="character">{{__('Po')}}</a></h3>
+                        <p>{{__('Autors')}}</p>
                         <div class="tags">
-                            <div class="one_tag">Elfs</div>
+                            <div class="one_tag">{{__('Elfs')}}</div>
                         </div>
                     </div>
                 </div>
@@ -89,10 +89,10 @@
                         <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
                     </div>
                     <div class="char_info">
-                    <h3><a href="character">Po</a></h3>
-                        <p>Autors</p>
+                    <h3><a href="character">{{__('Po')}}</a></h3>
+                        <p>{{__('Autors')}}</p>
                         <div class="tags">
-                            <div class="one_tag">Elfs</div>
+                            <div class="one_tag">{{__('Elfs')}}</div>
                         </div>
                     </div>
                 </div>
@@ -101,10 +101,10 @@
                         <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
                     </div>
                     <div class="char_info">
-                    <h3><a href="character">Po</a></h3>
-                        <p>Autors</p>
+                    <h3><a href="character">{{__('Po')}}</a></h3>
+                        <p>{{__('Autors')}}</p>
                         <div class="tags">
-                            <div class="one_tag">Elfs</div>
+                            <div class="one_tag">{{__('Elfs')}}</div>
                         </div>
                     </div>
                 </div>
@@ -113,10 +113,10 @@
                         <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
                     </div>
                     <div class="char_info">
-                    <h3><a href="character">Po</a></h3>
-                        <p>Autors</p>
+                    <h3><a href="character">{{__('Po')}}</a></h3>
+                        <p>{{__('Autors')}}</p>
                         <div class="tags">
-                            <div class="one_tag">Elfs</div>
+                            <div class="one_tag">{{__('Elfs')}}</div>
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
         </section>
         
         <footer>
-            <p>Izveidoja <strong>Emīlija Radzeviča</strong> un <strong>Roberta Zvejniece </strong></p>
+            <p>{{__('Izveidoja')}} <strong>Emīlija Radzeviča</strong> {{__('un')}} <strong>Roberta Zvejniece </strong></p>
         </footer>
     </div>
     

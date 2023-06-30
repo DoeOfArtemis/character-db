@@ -4,31 +4,24 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    
+    public function create(Request $request)
     {
-        //
-    }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
+        DB::table('users')->insert([
+            'name'=>$request->input('name'),
+            'surname'=>$request->input('surname'),
+            'email'=>$request->input('e-mail'),
+            'username'=>$request->input('username'),
+            'password'=>$request->input('password')
+        ]);
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+        return view('user');
     }
 
     /**

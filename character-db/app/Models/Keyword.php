@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Keyword extends Model
 {
-    use HasFactory;
+    // use HasFactory;
+
+    protected $fillable = ['word'];
 }

@@ -33,7 +33,8 @@
         </div>
         <h1 class="title">Jauns tēls</h1> 
         <section>
-            <form action="">
+            <form action="{{route('createchar')}}" method="post">
+                @csrf
                 <div class="whole">
                     <input type="radio" id="dd" name="type" value="2">
                     <label for="type">D&D</label><br>
@@ -53,8 +54,16 @@
                     <input type="text" id="age" name="age">
                 </div>
                 <div class="whole">
+                    <label for="class">Klase</label><br>
+                    <input type="text" id="class" name="class">
+                </div>
+                <div class="whole">
+                    <label for="subclass">Sub-klase</label><br>
+                    <input type="text" id="subclass" name="subclass">
+                </div>
+                <div class="whole">
                     <label for="img">Attēls</label><br>
-                    <input class="img" id="img" type="file" accept=".jpeg, .png">
+                    <input class="img" id="img" name="img" type="file" accept=".jpeg, .png">
                 </div>
                 <div class="whole">
                     <label for="descrption">Apraksts</label><br>
