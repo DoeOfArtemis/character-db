@@ -36,3 +36,7 @@ Route::get('sign-up', function () {
 Route::get('character', function () {
     return view('character');
 });
+
+Route::get('/dbconn', function () {
+    return view('dbconn');
+});
