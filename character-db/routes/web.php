@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\CharacterController;
+use App\Http\Controllers\KeywordController;
+use App\Http\Controllers\TagController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Character;
 
@@ -45,3 +49,13 @@ Route::get('/dbconn', function () {
 Route::get('/modeling', function () {
     return view ('welcome', [Character::itOK()]);
 });
+
+// Route::resource('character', CharacterController::class);
+// Route::resource('user', UserController::class);
+// Route::resource('keyword', KeywordController::class);
+// Route::resource('tag', TagController::class);
+
+
+Route::post('sign-up', [UserController::class, 'create'])->name('createuser');
+Route::delete('user', [CharacterController::class, 'destroy'])->name('deletechar');
+Route::post('create', [CharacterController::class, 'create'])->name('createchar');

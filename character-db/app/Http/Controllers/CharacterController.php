@@ -3,32 +3,30 @@
 namespace App\Http\Controllers;
 
 use App\Models\Character;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CharacterController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
-    }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    
+    public function create(Request $request)
     {
-        //
-    }
+        DB::table('characters')->insert([
+            'type'=>$request->input('type'),
+            'name'=>$request->input('name'),
+            'race'=>$request->input('race'),
+            'age'=>$request->input('age'),
+            'class'=>$request->input('class'),
+            'subclass'=>$request->input('subclass'),
+            'photo'=>$request->input('img'),
+            'description'=>$request->input('description'),
+            'created_at'=> Carbon::now()->format('d-m-Y'),
+            'user_id'=>'4',
+        ]);
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+        return view('create');
     }
 
     /**

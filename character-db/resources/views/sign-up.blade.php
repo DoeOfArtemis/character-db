@@ -34,26 +34,32 @@
         </div>
         <h1 class="title">Reģistrēties</h1> 
         <section>
-            <form action="post">
+            <form action="{{route('createuser')}}" method="post">
+                @csrf
                 <div class="whole">
                     <label for="name">Vārds</label><br>
                     <input type="text" id="name" name="name">
+                    <span class="error">@error('name'){{ $message}} @enderror</span>
                 </div>
                 <div class="whole">
                     <label for="surname">Uzvārds</label><br>
                     <input type="text" id="surname" name="surname">
+                    <span class="error">@error('surname'){{ $message}} @enderror</span>
                 </div>
                 <div class="whole">
                     <label for="e-mail">E-pasts</label><br>
                     <input type="e-mail" id="e-mail" name="e-mail">
+                    <span class="error">@error('e-mail'){{ $message}} @enderror</span>
                 </div>
                 <div class="whole">
                     <label for="username">Lietotājvārds</label><br>
                     <input type="text" id="username" name="username">
+                    <span class="error">@error('username'){{ $message}} @enderror</span>
                 </div>
                 <div class="whole">
                     <label for="password">Parole</label><br>
                     <input type="password" id="password" name="password">
+                    <span class="error">@error('password'){{ $message}} @enderror</span>
                 </div>
                 <input class="submit" type="submit" value="Ieiet">
                         

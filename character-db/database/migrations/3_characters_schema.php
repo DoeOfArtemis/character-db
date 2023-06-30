@@ -16,11 +16,12 @@ return new class extends Migration
             $table->id();
             $table->enum('type', ['D&D', 'Books']);
             $table->string('name');
+            $table->integer('age');
             $table->string('race');
             $table->string('class')->nullable();
             $table->string('subclass')->nullable();
             $table->longtext('description');
-            $table->boolean('published');
+            $table->boolean('published')->default(1);
             $table->dateTime('created_at');
             $table->binary('photo');
         });
