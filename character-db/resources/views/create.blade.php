@@ -27,10 +27,9 @@
             </div>
             <div class="login">
                 <ul class="log_buttons">
-                    <li><a href="log-in">Ieiet</a></li>
-                    <li><a href="sign-up">Pierakstīties</a></li>
+                    <li><a href="/">Iziet</a></li>
                 </ul>
-            </div>  
+            </div> 
         </div>
         <h1 class="title">Jauns tēls</h1> 
         <section>

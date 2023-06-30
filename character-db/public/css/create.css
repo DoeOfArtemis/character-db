@@ -48,8 +48,9 @@ body {
 }
 .log_buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-size: 150%;
+    padding-right: 10%;
 }
 .log_buttons li {
     list-style-type: none;
