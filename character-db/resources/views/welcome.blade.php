@@ -46,7 +46,17 @@
 
             </article>
             <article class="product">
-                <div class="one_char">
+            <?php
+                //@foreach ($characters as $character) {
+                    //<div class="char-info">
+                       // {{$character->name}} - {{$character->type}} - {{$character->race}}
+                   // </div>
+                //}
+                //@endforeach
+            ?> 
+            
+            
+            <div class="one_char">
                     <div class="cover">
                         <img src="https://animatorisland.b-cdn.net/wp-content/uploads/2017/07/Po_Kung_Fu_Panda-600x639.jpg" alt="tēla attēls">
                     </div>

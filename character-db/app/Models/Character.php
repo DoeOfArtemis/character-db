@@ -7,7 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Character extends Model
 {
-    // use HasFactory;
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'type',
+        'race',
+        'class',
+        'subclass',
+        'description',
+        'published',
+        'photo'
+    ];
     public static function itOK() {
         return ("model is working");
     }
