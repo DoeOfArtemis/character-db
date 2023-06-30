@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Test;
+use App\Models\Character;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +42,6 @@ Route::get('/dbconn', function () {
     return view('dbconn');
 });
 
+Route::get('/modeling', function () {
+    return view ('welcome', [Character::itOK()]);
+});

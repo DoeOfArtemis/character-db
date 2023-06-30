@@ -17,6 +17,8 @@
                 echo "Veiksmīgs ir savieojus ar" .DB::connection()->getDatabaseName();
             }
 
+            
+
         ?>
     <body>
     
